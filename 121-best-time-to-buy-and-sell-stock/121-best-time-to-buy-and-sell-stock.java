@@ -15,7 +15,6 @@ class Solution {
 
             }
         }
-        System.out.println(max + " " + min);
         return maxed;
 
     }
