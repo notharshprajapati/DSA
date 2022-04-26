@@ -1,8 +1,7 @@
 class Solution {
     public void reverseString(char[] s) {
-        int l =0;
-        int r = s.length -1;
-        revStr(s,l,r);
+
+        revStr(s,0,s.length -1);
     }
     
     public void revStr(char[] s,int l ,int r)
