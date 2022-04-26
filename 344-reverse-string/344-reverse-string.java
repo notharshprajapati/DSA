@@ -6,7 +6,7 @@ class Solution {
     
     public void revStr(char[] s,int l ,int r)
     { 
-        if(l>r)
+        if(l>=r)
         {
             return ;
         }
