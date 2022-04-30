@@ -25,8 +25,5 @@ class Solution {
             arr[i] = 2;
         }
 
-        for (int i = 0; i < c2; i++) {
-            System.out.print(arr[i] + " ");
-        }
     }
 }
