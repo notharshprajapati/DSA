@@ -1,10 +1,20 @@
 class Solution {
     public boolean searchMatrix(int[][] arr, int tar) {
-      for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr[0].length; j++) {
-        if (tar == arr[i][j]) {
-          return true;
-        }
+        
+    int n = arr.length;
+    int m = arr[0].length;
+
+    int i = 0;
+    int j = m - 1;
+
+    while (i < n && j >= 0) {
+      System.out.println(arr[i][j] + " " + i + " " + j);
+      if (arr[i][j] == tar) {
+        return true;
+      } else if (arr[i][j] < tar) {
+        i++;
+      } else if (arr[i][j] > tar) {
+        j--;
       }
     }
     return false;
